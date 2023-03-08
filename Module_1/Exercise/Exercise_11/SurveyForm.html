@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Research Survey</title>
+    <link rel="icon" href="https://www.nist.gov/sites/default/files/images/2022/03/29/Survey.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="info">
+        <h3>
+            Market Research Survey
+        </h3>
+        <p>
+            Please take a few moments to complete this satisfaction survey.
+        </p>
+    </header>
+    
+    <form action="">
+        <div class="group">
+            <strong>
+                What is your age range?
+            </strong><br>
+            <select name="age">
+                <option selected>18-24</option>
+                <option>25-34</option>
+                <option>35-50</option>
+                <option>50+</option>
+            </select><br>
+        </div>
+
+        <div class="group">
+            <strong>
+                What is your yearly income range?
+            </strong><br>
+            <select name="income" id="" >
+                <option>$0 - $25,000</option>
+                <option selected>$25,001 - $50,000</option>
+                <option>$50,001 - $100,000</option>
+                <option>$100,000+</option>
+            </select><br>
+        </div>
+
+        <div class="group">
+            <strong>
+                Gender Identity
+            </strong><br>
+            <input type="radio" name="gender" checked> Male <br>
+            <input type="radio" name="gender"> Female <br>
+            <br>
+        </div>
+
+        <div class="group">
+            <strong> 
+                Which of the following product have you purchased in the last 2 months. Please check all that apply.
+            </strong><br>
+            <input type="checkbox" name="product"> Product 1 <br>
+            <input type="checkbox" name="product" checked> Product 2 <br>
+            <input type="checkbox" name="product"> Product 3 <br>
+            <br>
+        </div>
+
+        <div class="group">
+        <strong>
+            How often would you use our new product?
+        </strong><br>
+        <input type="radio" name="often"> Daily <br>
+        <input type="radio" name="often" checked> Week <br>
+        <input type="radio" name="often"> Monthly <br>
+        <br>
+        </div>
+
+        <div class="group">
+        <strong>
+            What would you pay for the new product?
+        </strong><br>
+        <table>
+            <tr>
+                <td>$</td>
+                <td><input type="text" size="8">.</td>
+                <td><input type="text" size="3"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Dollars</td>
+                <td>Cents</td>
+            </tr>
+        </table>
+        <br>
+        </div>
+
+        <div class="group">
+        <strong>
+            What features would you like to see in the new product?
+        </strong><br>
+        <textarea name="" id="" cols="100" rows="10"></textarea>
+        <br>
+        <p>Please rate your agreement with the following statements.</p><br>
+        <table border="1">
+            <thead>
+                <th></th>
+                <th>Strongly Disagree</th>
+                <th>Disagree</th>
+                <th>Agree</th>
+                <th>Strongly Agree</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="left" width="310px">Our products are priced fairly.</td>
+                    <td align="center" width="150px">
+                        <input type="radio" name="price"><br>
+                        1
+                    </td>
+                    <td align="center" width="150px">
+                        <input type="radio" name="price"><br>
+                        2
+                    </td>
+                    <td align="center" width="150px">
+                        <input type="radio" name="price" checked><br>
+                        3
+                    </td>
+                    <td align="center" width="150px">
+                        <input type="radio" name="price"><br>
+                        4
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left" width="310px">Our products are high quality.</td>
+                    <td align="center">
+                        <input type="radio" name="quality"><br>
+                        1
+                    </td>
+                    <td align="center">
+                        <input type="radio" name="quality"><br>
+                        2
+                    </td>
+                    <td align="center">
+                        <input type="radio" name="quality" checked><br>
+                        3
+                    </td>
+                    <td align="center">
+                        <input type="radio" name="quality"><br>
+                        4
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left" width="310px">You would recommend our product to a friend or coworker.</td>
+                    <td align="center">
+                        <input type="radio" name="recommend"><br>
+                        1
+                    </td>
+                    <td align="center">
+                        <input type="radio" name="recommend"><br>
+                        2
+                    </td>
+                    <td align="center">
+                        <input type="radio" name="recommend" checked><br>
+                        3
+                    </td>
+                    <td align="center">
+                        <input type="radio" name="recommend"><br>
+                        4
+                    </td>
+                </tr>
+            </tbody>
+        </table><br>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.info {
+    border-bottom: 1px dotted #ccc ;
+    clear:both;
+}
+
+.info h3,p {
+    padding: 0 0 10px 10px;
+}
+
+.info p {
+    margin-bottom: 5px;
+}
+
+.group {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
