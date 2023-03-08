@@ -6,13 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thời khóa biểu</title>
     <style>
-        body{
+        body {
             text-align: center;
             width: 100%;
         }
 
-        table{
+        table {
             margin: 0 auto;
+        }
+        
+        #Num {
+            background: yellow;
+        }
+
+        .ber {
+            background: orange;
         }
     </style>
 </head>
@@ -34,15 +42,15 @@
             </tr>
         </tbody>
     </table>
-    <table border="1" width="800px">
-        <thead>
+    <table border="1" style="border-collapse:collapse; width:800px;" >
+        <thead class="heading">
             <th colspan="3"></th>
-            <th>Thứ 3</th>
-            <th>Thứ 5</th>
-            <th>Thứ 7</th>
+            <th id="Num">Thứ 3</th>
+            <th id="Num">Thứ 5</th>
+            <th id="Num">Thứ 7</th>
         </thead>
         <tbody>
-            <tr>
+            <tr class="ber">
                 <td align="center">Tuần</td>
                 <td align="center" width="130px">Ngày bắt đầu</td>
                 <td align="center" width="130px">Ngày kết thúc</td>

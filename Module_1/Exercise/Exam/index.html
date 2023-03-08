@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onchange Function</title>
+</head>
+<body>
+    <p>Select a new car from the list</p>
+
+    <select id="mySelect">
+        <option value="Jordan">Jordan</option>
+        <option value="Nike">Nike</option>
+        <option value="Adidas">Adidas</option>
+        <option value="Puma">Puma</option>
+        <option value="Convert">Convert</option>
+    </select>
+
+    <script>
+        // function do_something() {
+        //     var selectedValue = document.getElementById("mySelect").value;
+        //     alert(selectedValue); 
+        // }
+        var selectedElement = document.getElementById("mySelect");
+        selectedElement.addEventListener("change" ,changFunction);
+            
+        function changFunction() {
+            var selectValue = document.getElementById("mySelect").value;
+            alert(selectValue);
+        }
+    </script>
+</body>
+</html>
