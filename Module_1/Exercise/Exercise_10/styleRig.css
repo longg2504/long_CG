@@ -1,0 +1,17 @@
+
+form {
+    background: rgb(243, 240, 35);
+    width: 300px;
+}
+
+caption {
+    background: rgb(44, 214, 177);
+    padding-top: 2px;
+    margin: 5px 0 5px 5px;
+    width: 290px;
+    text-align: left;
+}
+
+.group{
+    color: blue;
+}

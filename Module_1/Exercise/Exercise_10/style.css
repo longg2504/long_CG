@@ -1,0 +1,27 @@
+fieldset {
+    background: skyblue;
+    width: 350px;
+    height: 182px;
+    padding: 5px;
+    border: none;
+    margin: 0;
+}
+
+table {
+    padding: 5px;
+    margin: 8px;
+    background: white;
+}
+
+td {
+    color : blue;
+
+}
+
+.input_hobby {
+    color: red;
+}
+
+.input_hobby input {
+    margin: 0 2px;
+}

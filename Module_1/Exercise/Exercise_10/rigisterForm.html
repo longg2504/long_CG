@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleRig.css">
+</head>
+<body>
+    <form action="">
+        <table>
+            <thead>
+                <caption>ĐĂNG KÝ HỌC VIÊN</caption>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="group">Họ và tên</td>
+                    <td colspan="2">
+                        <input type="text" name="name" required >
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="group">Ngày sinh</td>
+                    <td colspan="2">
+                        <input type="text" name="date" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="group">Giới tính</td>
+                    <td>
+                        <input type="radio" name="gender" checked> Nam
+                    </td>
+                    <td>
+                        <input type="radio" name="gender"> Nữ
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="group">Địa chỉ</td>
+                    <td colspan="2">
+                        <textarea name="address"  cols="21" rows="5"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="group">Lớp</td>
+                    <td colspan="2">
+                        <select name="class" style="width:178px;">
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="E">E</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr class="group">
+                    <td>Email</td>
+                    <td colspan="2">
+                        <input type="text" name="email">
+                    </td>
+                </tr>
+
+                <tr class="group">
+                    <td>Điện Thoại</td>
+                    <td colspan="2">
+                        <input type="text" name="tel">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Đăng ký">
+                    </td>   
+                    <td>
+                        <input type="reset"value="Nhập lại">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
