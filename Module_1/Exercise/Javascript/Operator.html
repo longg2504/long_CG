@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
+    <!-- <script>
         let i = 10 
         let f = 20.5
         let b = true 
@@ -20,13 +20,29 @@
         document.write('b = ' + b)
         document.write('<br/>')
         document.write('s = ' + s)
-    </script>
-<br>
-    <script>
+    </script> -->
+<!-- <br> -->
+    <!-- <script>
         let width = 20
         let height = 10
         let area = width * height
         document.write('Area = ' + area)
+    </script> -->
+<!-- <br> -->
+    <script>
+        let a ,b 
+        //lấy giá trị từ người dùng
+        a = prompt("nhập vào số a: ")
+        b = prompt("nhập vào số b: ")
+
+        //đổi sang kiểu Number 
+        a = parseInt(a);
+        b = parseInt(b);
+
+        if(b % a ==0){
+            alert("a là bội số của b ")
+        }
+        else alert("a không phải là bội số của b ")
     </script>
 </body>
 </html>
