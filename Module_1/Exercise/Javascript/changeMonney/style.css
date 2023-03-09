@@ -1,0 +1,24 @@
+
+#From {
+    width: 100px;
+    padding: 5px;
+    margin-left: 15px;
+}
+
+#To {
+    width: 100px;
+    padding: 5px;
+    margin-left: 15px;
+}
+
+button {
+    margin-left: 20px;
+    padding: 5px;
+}
+
+#Amount {
+    padding: 5px;
+}
+table>tbody>tr>th{
+    padding-left: 15px;
+}
