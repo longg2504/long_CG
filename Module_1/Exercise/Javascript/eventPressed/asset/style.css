@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+body {
+    width: 100%;
+    border: none;
+    background-image: linear-gradient(to right ,#c6ffdd, #fbd786, #f7797d)
+    
+}    
+#nobita {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    
+}
