@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 900px;
+    background: #5429FF;
+    border-radius: 44px;
+}
+
+header {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 341px;
+    height: 80px;
+    left: 140px;
+    top: 20px;
+}
+
+header h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #344054;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 360px;
+    height: 72px;
+    left: 140px;
+    top: 260px;
+
+}
+
+.weight p , .height p , .result p{
+    width: 36px;
+    height: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 20px;
+    color: #344054;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 10px 0;
+}
+
+.result #rs {
+    width: 400px;
+    height: 20px;
+    font-size: 20px;
+    color:black;
+    font-weight: bold;
+
+}
+
+.weight #wt , .height #ht{
+    width: 360px;
+    height: 44px;
+    border: 1px solid #D0D5DD;
+    border-radius: 8px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    opacity: 1;
+}
+
+
+.background {
+    position: absolute;
+    width: 768px;
+    height: 540px;
+    left: 550px;
+    top: 50px;
+    background: #CBCCE8;
+    border-radius: 40px;
+}
+
+.background .border {
+    position: absolute;
+    width: 736px;
+    height: 865px;
+    left: 16px;
+    top: 16px;
+}
+
+.background .border .img {
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: url(../BMI/img2.png) no-repeat ;
+    background-size: 736px 499px; ;
+    background-origin: border-box;
+    height: 500px;
+    border: 1px solid #000000;
+    border-radius: 44px;
+}
+
+
+button {
+    padding: 5px;
+    border-radius: 44px;
+    width: 100px;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    background: #CBCCE8;
+    font-size: 14px;
+    font-family:'Inter';
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #344054;
+    margin-top: 125px;
+}
+
