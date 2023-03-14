@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+}
+body {
+    background-image:linear-gradient(to right , #fff9, #f5cbbc99);
+}
+#ball {
+    width: 10%;
+    overflow: visible;
+}
+
+p{
+    padding-left: 10px;
+}
+
+.btn:active {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+.btn {
+    margin: 10px 0 0 10px;
+    padding: 5px;
+    width: 100px;
+    border: 1px solid #b21065;
+    border-radius: 20px;
+    text-shadow: 0 -1px 0 #efb7de;
+    background-image:
+    linear-gradient(to bottom , #fff9 ,
+        transparent 50% , transparent 90% , #f5cbbc99),
+    repeating-linear-gradient(60deg, #bc058255 0 , #bc058255 10px , 
+        transparent 10px , transparent 20px),
+    linear-gradient(to bottom , #ee08a6 , #ee6c8f);
+    box-shadow: 
+        0 10px 0 #0005,
+        0 5px 0 #bd1360,
+        0 4px 0 7px #fff,
+        0 0 30px 20px #893066;
+    color: #fff9;
+}
