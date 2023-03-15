@@ -91,3 +91,7 @@ function dragEnd() {
     document.getElementById("turns").innerText = turns;
 }
 
+// function check() {
+//     for (let i=1; i <= rows*columns; i++) {
+//         pieces.push(i);
+// }

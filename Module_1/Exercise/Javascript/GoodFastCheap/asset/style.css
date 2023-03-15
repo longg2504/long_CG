@@ -1,0 +1,76 @@
+html,
+body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #161616;
+}
+
+.stage {
+  margin: 0 auto;
+  width: 300px;
+  padding: 1rem;
+  background: #f0f0f0;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+}
+li span {
+  margin-left: 1rem;
+  float: right;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.switch {
+  position: absolute;
+  left: -99999px;
+  margin: 1rem;
+}
+
+.switch:checked ~ span {
+  color: red;
+}
+
+.switch:checked ~ label:before {
+  transform: translateX(25px);
+}
+.switch:checked ~ label:after {
+  float: left;
+}
+
+label {
+  margin-bottom: 1rem;
+  background: #161616;
+  width: 50px;
+  height: 25px;
+  display: inline-block;
+  border-radius: 20px;
+}
+label:before {
+  transition: all 400ms ease;
+  width: 25px;
+  height: 25px;
+  border-radius: inherit;
+  display: inline-block;
+  content: "";
+  background: #b0b0b0;
+}
+
+#good:checked ~ label:before {
+  background: #f48fb1;
+}
+
+#fast:checked ~ label:before {
+  background: #fff176;
+}
+
+#cheap:checked ~ label:before {
+  background: #90caf9;
+}
