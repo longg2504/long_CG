@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    width: 1000px;
+    background-image: linear-gradient(to right , #D7C0D0 , #F7C7DB,#F79AD3,#C86FC9,#8E518D);
+}
+
+h1 {
+    color: #8E518D;
+    font-size: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+}
+
+input {
+    width: 60px;
+    border-radius: 5px;
+    border: 1px solid #8E518D;
+    background-image: linear-gradient(to right , #D7C0D0 , #F7C7DB,#F79AD3,#C86FC9,#8E518D);
+    color: #751350;
+}
