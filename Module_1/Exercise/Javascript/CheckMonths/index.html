@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Months</title>
+    <style>
+        #btn {
+            width: 100px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: bolder;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: rgb(50, 196, 196);
+        }
+        #val {
+            height: 21px;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+        #result {
+            font-size: 22px;
+            font-weight : bold
+        }
+    </style>
+</head>
+<body>
+    <h1>Kiểm tra số ngày trong tháng</h1>
+
+    <div>
+        <input id="val" type="number">
+        <button id="btn" onclick="check()">check</button>
+    </div>
+    <p id="result"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
