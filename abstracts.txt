@@ -1,0 +1,126 @@
+Tuần 3 :
+15/03/2023
++ Từ khóa continue để làm gì
+  -- từ khoá continue thường được sử dụng trong JS và các ngôn ngữ lập trình khác,
+     nó thường được sử dụng trong vòng lặp , khi continue được thực thi thì nó sẽ
+     bỏ qua những câu lệnh đứng sau nó và bắt đầu một chu kỳ mới của vòng lặp
+	++ example : 
+		let arr  = ['5', '10', '15', '1', '3', '-1', '18', '20', '70', '-15']
+		for(var i = 0 ; i < 10 ; i++)
+		{
+			if (arr[i] < 0)
+                	continue;
+            		document.write(arr[i] + " ");
+		}
+
+		output : 5 10 15 1 3 18 20 70
+	
++ Tìm hiểu vòng lặp for, while, do/while 
+-----------------------------------------for ------------------------------------------
+for (initial-action; loop-continuation-condition;action-after-each-iteration) 
+	{
+	statement(s);
+	}
+- initial-action: là các câu lệnh được thực thi một lần duy nhất khi vòng lặp bắt đầu chạy
+- loop-continuation-condition: là biểu thức điều kiện để xác định xem vòng lặp có được 
+tiếp tục hay không
+- statement(s): là khối lệnh sẽ được thực thi trong mỗi lần lặp
+- action-after-each-iteration: là các câu lệnh được thực thi sau mỗi lần lặp
+
+--------------- luồng thực thi của vòng lặp for--------------------------------------
+1. Các câu lệnh initial-action được thực thi
+2. Biểu thức điều kiện được đánh giá. Nếu điều kiện đúng thì khối
+lệnh bên trong thân vòng lặp được thực thi. Nếu điều kiện sai
+thì vòng lặp kết thúc
+3. Khối lệnh bên trong thân vòng lặp được thực thi
+4. Các câu lệnh action-after-each-iteration được thực thi
+5. Bắt đầu vòng lặp mới từ bước 2 – 3 - 4
+---------------example : 
+for (var i = 1; i <= 10; i++)
+{
+var product = 5 * i;
+document.write("5 x " + i + " = " + product);
+}
+
+
+-----------------------------------------vòng lặp while--------------------------------
+
+Vòng lặp while thực thi lặp lại một khối lệnh nếu biểu thức điều kiện trả về giá trị đúng
+--Cú pháp:
+	while (loop-continuation-condition) 
+	{
+	statement(s);
+	}
+
+Trong đó:
+--loop-continuation-condition : là biểu thức điều kiện
+--statement(s): là các câu lệnh được thực thi trong mỗi lần lặp
+
+----------------------------------example----------------------------------
+
+var text = 'Hello'
+while (text !== 'q') 
+{
+	document.write(text + '<br/>');
+	text = prompt('Enter a text to print.Enter "q" to quit.')
+}
+
+var text= 'Hello';
+while (text !== 'q'   &&   text !== '')
+ { 
+	document.write(text +  '<br/>' )
+	text= prompt('Enter a text to print. Enter "q" or empty to quit.')
+ }
+
+----------------lặp vô hạn --------------------
+while(true)
+{
+
+}
+
+!Khi vòng lặp thực thi vô tận thì có thể sẽ hao tốn rất nhiều tài nguyên.
+Cần thiết kế điều kiện dừng cẩn thận để tránh xảy ra trường hợp này.!
+
+for được dùng khi biết trước số lần lặp
+while được dùng khi chưa biết số lần lặp 
+
+---------------------------------------vòng lặp do - while ----------------------------
+
+do 
+{
+  statements(s);
+} while (loop-continuation-condition);
+
+
+--statement(s): Các câu lệnh được thực thi trong mỗi lần lặp
+--loop-continuation-condition: Biểu thức điều kiện. Nếu
+biểu thức điều kiện trả về giá trị true thì vòng lặp sẽ tiếp
+tục thực thi. Nếu biểu thức điều kiện trả về false thì vòng
+lặp kết thúc
+
+--Điểm khác biệt giữa while và do-while: Thân của vòng lặp do-while được thực hiện ít nhất 
+là một lần. Kể cả khi biểu thức điều kiện trả về sai.
+
+
+var sum= O;
+var number;
+do 
+{
+	number= parseint(prompt('Enter a number')); 
+	sum+= number;
+} while (number!= O);
+document.write("The sum is : " + sum);
+
+--------------------------LẶP VÔ HẠN ----------------------------------
+• Vòng lặp vô hạn là chuỗi các câu lệnh được thực hiện lặp đi lặp lại không có điểm dừng.
+• Nguyên nhân có thể là:
+• Vòng lặp chưa có điều kết thúc vòng lặp
+• Vòng lặp có điều điều kiện để kết thúc vòng lặp nhưng điều kiện này không bao giờ được
+đáp ứng.
+• Hoặc có thể một logic nào đó dẫn đến lặp vô hạn
+• Chương trình gặp vòng lặp vô hạn,
+• Treo máy hoặc bị crash
+• Do vậy, cần tránh để xảy ra vòng lặp vô hạn trong chương trình.
+
+
+
