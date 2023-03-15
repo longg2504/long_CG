@@ -1,6 +1,6 @@
 function yesClick()
 {
-    alert("Yes. you are right ");
+    alert("I love you so much <3");
 }
 function noHover()
 {
