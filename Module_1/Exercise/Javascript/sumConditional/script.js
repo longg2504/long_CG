@@ -87,29 +87,48 @@ function bai6() {
     }
 }
 
-function bai7 () {
-    let phi = 0
-    let lv1=1678 , lv2 = 1734, lv3 = 2014 , lv4 = 2536 , lv5 = 2834 , lv6 = 2927 
-    let inputA = +prompt('số chữ điện trong tháng :')
+// function bai7 () {
+//     let phi = 0
+//     let lv1=1678 , lv2 = 1734, lv3 = 2014 , lv4 = 2536 , lv5 = 2834 , lv6 = 2927 
+//     let inputA = +prompt('số chữ điện trong tháng :')
 
+//     do {
+//     if(inputA < 0 || inputA == 0){
+//         inputA = +prompt('hãy nhập lại số chữ điện trong tháng :')
+//     }
+// }while(inputA < 0 || inputA == 0)
+
+//     if(inputA <= 50 && inputA > 0) {
+//         phi = inputA*lv1
+//     }else if(inputA<=100 && inputA > 51) {
+//         phi = 50*lv1 + ((inputA - 50)*lv2)
+//     }else if(inputA<=200 && inputA > 101){
+//         phi = 50*lv1 + 50*lv2 + ((inputA-100)*lv3)
+//     }else if(inputA <= 300 && inputA > 201){
+//         phi = 50*lv1 + 50*lv2 + 100*lv3 + ((inputA-200)*lv4)
+//     }else if(inputA<=400 && inputA > 301) {
+//         phi = 50*lv1 + 50*lv2 + 100*lv3 + 100*lv4 + ((inputA-300)*lv5)
+//     }else if(inputA > 400) {
+//         phi = 50*lv1 + 50*lv2 + 100*lv3 + 100*lv4 + 100*lv5 +((inputA-400)*lv6)
+//     }
+//     alert('tổng số tiền phải trả cho' + inputA  +'chữ số điện là :' +phi)
+// }
+
+function bai7() {
+    let  fee = 0 , sum = 0 , feeStand = 25000
+    let minCall = +prompt('số phút gọi trong tháng : ')
     do {
-    if(inputA < 0 || inputA == 0){
-        inputA = +prompt('hãy nhập lại số chữ điện trong tháng :')
+        if(minCall < 0 || minCall == 0){
+            minCall = +prompt('hãy nhập lại số phút bạn đã gọi trong tháng :')
+        }
+    }while(minCall < 0 || minCall == 0)
+    if(minCall > 200) {
+        fee = (minCall-200)*200+150*400+50*600
+    }else if(minCall > 50){
+        fee = (minCall-50)*400+50*600;
+    }else {
+        fee = minCall*600
     }
-}while(inputA < 0 || inputA == 0)
-
-    if(inputA <= 50 && inputA > 0) {
-        phi = inputA*lv1
-    }else if(inputA<=100 && inputA > 51) {
-        phi = 50*lv1 + ((inputA - 50)*lv2)
-    }else if(inputA<=200 && inputA > 101){
-        phi = 50*lv1 + 50*lv2 + ((inputA-100)*lv3)
-    }else if(inputA <= 300 && inputA > 201){
-        phi = 50*lv1 + 50*lv2 + 100*lv3 + ((inputA-200)*lv4)
-    }else if(inputA<=400 && inputA > 301) {
-        phi = 50*lv1 + 50*lv2 + 100*lv3 + 100*lv4 + ((inputA-300)*lv5)
-    }else if(inputA > 400) {
-        phi = 50*lv1 + 50*lv2 + 100*lv3 + 100*lv4 + 100*lv5 +((inputA-400)*lv6)
-    }
-    alert('tổng số tiền phải trả cho' + inputA  +'chữ số điện là :' +phi)
+    sum = fee + feeStand
+    alert('bạn đã gọi ' +minCall + ' phút số tiền bạn phải trả cho ' +minCall + ' phút là ' +sum)
 }
