@@ -7,16 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>JavaScript Loops</h2>
-    <p id="demo"></p>
-
     <script>
-        let num = +prompt('Enter your number')
-        let total = 0
-        for(var i =1 ; i<= num ; i++) {
-            total = total + i
+        let i = 1
+        while(i < 100) {
+            document.write("<hr width = " + i + "%>");
+            i++;
         }
-        alert(total);
     </script>
 </body>
 </html>
