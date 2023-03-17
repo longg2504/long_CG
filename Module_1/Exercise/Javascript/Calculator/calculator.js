@@ -1,6 +1,6 @@
 function Add() {
     let a = document.getElementById('numb1').value
-let b = document.getElementById('numb2').value
+    let b = document.getElementById('numb2').value
     let sum = 0 
     sum = Number(a) + Number (b)
     document.getElementById('Result').innerHTML = ('Result is :' + sum)
@@ -8,7 +8,7 @@ let b = document.getElementById('numb2').value
 
 function Sub() {
     let a = document.getElementById('numb1').value
-let b = document.getElementById('numb2').value
+    let b = document.getElementById('numb2').value
     let sub = 0 
     sub = Number(a) - Number(b)
     document.getElementById('Result').innerHTML = ('Result is :' + sub)
