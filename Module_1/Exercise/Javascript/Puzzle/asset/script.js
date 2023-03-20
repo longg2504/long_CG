@@ -6,7 +6,7 @@ var otherTile;
 
 var turns = 0;
 
-window.onload = function() {
+window.onload = function () {
     //initialize the 5x5 board
     for (let r = 0; r < rows; r++) {
         for (let c = 0; c < columns; c++) {
@@ -28,11 +28,11 @@ window.onload = function() {
 
     //pieces
     let pieces = [];
-    for (let i=1; i <= rows*columns; i++) {
+    for (let i = 1; i <= rows * columns; i++) {
         pieces.push(i.toString()); //put "1" to "25" into the array (puzzle images names)
     }
     pieces.reverse();
-    for (let i =0; i < pieces.length; i++) {
+    for (let i = 0; i < pieces.length; i++) {
         let j = Math.floor(Math.random() * pieces.length);
 
         //swap
@@ -55,6 +55,7 @@ window.onload = function() {
 
         document.getElementById("pieces").append(tile);
     }
+
 }
 
 //DRAG TILES
@@ -89,9 +90,44 @@ function dragEnd() {
 
     turns += 1;
     document.getElementById("turns").innerText = turns;
+    check();
 }
-
-// function check() {
-//     for (let i=1; i <= rows*columns; i++) {
-//         pieces.push(i);
-// }
+let anwser = ['images/1.jpg',
+    'images/2.jpg',
+    'images/3.jpg',
+    'images/4.jpg',
+    'images/5.jpg',
+    'images/6.jpg',
+    'images/7.jpg',
+    'images/8.jpg',
+    'images/9.jpg',
+    'images/10.jpg',
+    'images/11.jpg',
+    'images/12.jpg',
+    'images/13.jpg',
+    'images/14.jpg',
+    'images/15.jpg',
+    'images/16.jpg',
+    'images/17.jpg',
+    'images/18.jpg',
+    'images/19.jpg',
+    'images/20.jpg',
+    'images/21.jpg',
+    'images/22.jpg',
+    'images/23.jpg',
+    'images/24.jpg',
+    'images/25.jpg'
+]
+function check() {
+    let count = 0
+    let m = document.querySelectorAll("#board img")
+    for (let i = 0; i < anwser.length; i++) {
+        if (m[i].src.includes(anwser[i])) {
+            count++
+        }
+        if(count == 25) {
+            alert('bạn đã hoàn tất màn chơi này' + '</br>' + 'Số lượt chơi của bạn : ' +turns)
+        }
+        
+    }
+}
