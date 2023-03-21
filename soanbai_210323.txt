@@ -1,0 +1,135 @@
+----------------------------------------Array----------------------------------------------
+* là một loại biến đặc biệt , có thể lưu trữ được nhiều giá trị như các biến thông thường 
+* mỗi giá trị trong mảng được gọi là 1 phần tử 
+* các phần tử được lưu ở các vị trí kế tiếp nhau trong bộ nhớ 
+---------------------------------------Khái niệm-------------------------------------------
+* tên mảng : tuân thủ theo quy tắc đặt tên của biến 
+* phần tử : các giá trị được lưu trữ trong mảng
+* chỉ số : vị trí các phần tử trong mảng , bắt đầu từ vị trí 0
+* độ dài : số lượng các phần từ trong mảng 
+* Syntax :
+	* var array_name = [item1,item2,......]
+	* var array_name = new Array(item1,item2,.....)
+
+	* mối phần tử(item) được xác định bằng một số thứ tự còn được gọi là chỉ số(index)
+	duy nhất trong mảng
+	* chỉ số là số nguyên dương
+	* chỉ số của phần tử cuối cùng là n - 1 , trong đó n là độ dài mảng (length)
+	*có thể truy xuất đến phần tử của máy thông qua chỉ số 
+------------------------------------truy xuất phần tử trong mảng--------------------------
+* mỗi phần tử được thao tác như 1 biến
+* truy xuất thông qua chỉ số đặt trong []
+***exam:
+	cars[0] = 'opel' 
+	
+	var name = cars[0]  
+------------------------------------thuộc tính và phương thức --------------------------
+*length : độ dàng mảng 
+	a.length()
+*push() : thêm phần tử vào mảng
+	a.push('Cars')
+*pop() : xoá phần tử khỏi mảng 
+	a.pop()
+*shift() : lấy di phần tử đầu tiên trong mảng 
+*unshift() : thêm phần tử vào đầu mảng 
+*join() : Chuyển tất cả các phần tử trong mảng thành chuỗi và nối lại với nhau 
+	exam : 
+		var a = [1,2,3]
+		a.join() =>"1,2,3"
+		a.join(" ") => "1 2 3
+		a.join("") => "123"
+*thêm phần tử bằng cách gán length
+a[a.length] = 'bycle'
+*duyệt mảng 
+	+ dùng for 
+	a = ['2','3','5','1','4','9']
+	for(let i = 0;i<a.length;i++){
+		text += a.[i] + '</br>'
+	}
+
+		document.write(text)
+	+ dung foreach cho phép thao tác lần lượt với từg phần tử 
+
+	let a = [4,2,9,5,6,8]
+	a.foreach(Function(item) {	
+	document.write(item + "</br>")
+	});
+
+------------------------------------map() ----------------------------------------------
+.map() method được dùng khi bạn muốn thao tác trên 1 mảng và muốn trả về 1 mảng
+ các giá trị thay đổi dựa trên giá trị của mảng đầu vào.
+exam:
+	const lengthArr = [1, 4, 3, 6];
+	let areaArr = [];
+	for(let i=0; i < lengthArr.length; i++) 
+		{
+   		areaArr.push(lengthArr[i] * lengthArr[i]);
+		}
+	console.log(areaArr);//[1, 16, 9, 36]
+
+exam 2 :
+	const lengthArr = [1, 4, 3, 6];
+	let areaArr = lengthArr.map(length => length * length);
+	console.log(areaArr);//[1, 16, 9, 36]
+map() nhận input vào là 1 callback function để transform mỗi phần tử trong mảng 
+thành 1 giá trị mới.
+
+----------------------------------------foreach()-----------------------------------------
+hàm foreach() là hàm giúp duyệt qua từng phần từ của mảng 
+Hàm forEach trên nhận đầu vào là một mảng array và một hàm số action
+ - thực hiện hành động đối với mỗi phần tử của mảng (array[i]).
+		function forEach(array, action){
+  			for(var i = 0; i < array.length; i++)
+    			action(array[i]);
+		}
+
+	var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+	var sum = 0;
+	forEach(numbers, function(element){
+    	sum += element;
+	});
+	console.log(sum);
+	// => 55
+
+
+syntax : 
+
+arr.forEach(function callback(currentValue, index, array) {
+    //your iterator
+}[, thisArg]);
+
+
+*callback: là hàm để thực hiện với mỗi phần tử của mảng, bao gồm 3 tham số:
+
+*currentValue: phần tử hiện tại đang được xử lý của array.
+*index: chỉ số của phần tử hiện tại đang được xử lý của array.
+*array: mảng hiện tại đang gọi hàm forEach.
+*thisArg: giá trị được sử dụng như là this, là tham chiếu tới đối tượng khi 
+thực hiện hàm callback.
+
+*Nếu thisArg bị bỏ qua thì mặc định giá trị đó là undefined.
+
+
+***exam
+	function printContentArray(array){
+ 	 array.forEach(function print(element){
+    		console.log(element);
+  	 });
+	}
+
+	printContentArray([1, 3, 5]);
+	// => 1
+	// => 3
+	// => 5
+
+-----------------------------------------findIndex----------------------------------
+findIndex cũng được sử dụng để tìm kiếm phần tử thỏa mãn điều kiện trong mảng. 
+
+*Tuy nhiên, thay vì trả về phần tử đó, findIndex sẽ trả về vị trí của phần tử 
+  đầu tiên thỏa mãn trong mảng. Nếu không có phần tử nào thỏa mãn, findIndex sẽ 
+  trả về giá trị là -1.
+
+**exam :
+		const example = [1, 2, 3, 4, 5]	
+		example.findIndex((item) => item > 3)
+		//Output: 3
