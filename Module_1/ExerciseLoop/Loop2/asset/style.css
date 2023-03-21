@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box ;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.container {
+    width: 1350px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 1px solid  black;
+}
+
+.container > ul > li > label {
+    padding: 5px 0;
+}
+
+.container > ul > li > button {
+    float: right;
+    padding: 2px;
+}
+
+.container > ul > li > button:hover {
+    background-color: rgb(63, 95, 136);
+}
+
+
