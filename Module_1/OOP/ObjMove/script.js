@@ -28,7 +28,7 @@ function Hero(image, top, left, size) {
         console.log('ok: ' + this.top);
     }
 }
-var hero = new Hero('nobita.png', 20, 30, 100);
+var hero = new Hero('Nobita.png', 20, 30, 100);
 function start() {
     if (hero.left < window.innerWidth - hero.size && hero.top == 20) {
         hero.moveRight();
